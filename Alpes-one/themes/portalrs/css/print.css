@@ -1,0 +1,85 @@
+/*apenas coluna principal Ã© impressa, escondendo demais Ã¡reas*/
+#conterBarraBG,
+#cabecalho,
+.artigo__ferramentas,
+.box,
+.redes-sociais__lista-redes,
+.colunaLateral,
+.panel--matriz,
+.matriz-ui-video-player,
+.matriz-ui-pagedlist-filter,
+.rodape, .barra-estado, .banner-rotativo, .artigo__audio, .artigo__video
+{
+    display: none !important;
+    visibility: hidden;
+}
+.relacionados__locais {
+    display: block !important;
+    visibility: visible;
+}
+/*URLs exibidas apenas nos links do corpo de texto dos artigos*/
+.artigo__texto a[href]:after {
+    content: " (" attr(href) ")";
+}
+.artigo__texto .textmidia-image-carousel a[href]:after, .artigo__ilustracao a[href]:after, .artigo__ilustracao--esquerda a[href]:after, .artigo__ilustracao--direita a[href]:after {
+    content: "";
+}
+a[href]:after {
+    content: "";
+}
+a,
+a:visited {
+text-decoration: underline;
+}
+/*aplicando fonte serifada ao conteudo*/
+.breadcrumb{
+    border-top: 1px solid #858585;
+    border-bottom: 0;
+    font-size: 9pt;
+    margin: 1% 5% 0% 0% ;
+}
+/*cabeÃ§alho  e rodape de impressao*/
+.cabecalhoImpressao {
+    display : block;  
+    visibility: visible; 
+}
+#printlogo{
+    top: 0;
+    width: 220px;
+    height: 71px;
+    margin:20px 10% 1% 5%;  
+}
+#printBrasao{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:85px;
+    height:55px;
+    margin: 20px 10% 1% 5%;
+
+}
+.rodapeImpressao {
+    margin: 10% 5% 0% 5% ;
+    border-top: 1px solid #ccc;
+    display : block;
+    visibility: visible;
+    text-align: center;
+}
+.artigo__cabecalho
+{
+    font-size: 15pt;
+    text-align: left;
+    margin: 1% 0;
+}
+.artigo__titulo {font-family: Cambria, "Times New Roman", "Courier New"; line-height: 1.5; font-size: 18pt; margin-bottom: 1rem;}
+.artigo__texto {
+    font-family: Cambria, "Times New Roman", "Courier New";
+    text-align: left;
+    font-size: 12pt;
+    margin: 5% 0 5% 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .artigo__subtitulo {
+    font-family: Cambria, "Times New Roman", "Courier New";
+}
+.artigo__ilustracao {margin-bottom: 1rem;}
